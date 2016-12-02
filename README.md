@@ -5,7 +5,7 @@ Software Timers using Delta list queue
 
 Introduction  
 ------------
-	In embedded systems a base timer uses hardware timer with a free-running counter updated in ISR. A scheduler uses this counter to execute programs from various queue lists.
+In embedded systems a base timer uses hardware timer with a free-running counter updated in ISR. A scheduler uses this counter to execute programs from various queue lists.
 Single timer resource is not possible to be used by multiple processes or threads especially in networking applications. Software timers which use delta list queue and one timer resource can be used. Another approach is to use the timer wheel concept which uses hash tables (tradeoff - increased speed to more memory).
 
 This example is to show the implementation of delta list timers in Linux environment.
